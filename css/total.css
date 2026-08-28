@@ -1,0 +1,271 @@
+body {
+    font-family: "Maitree", serif;
+    background-image: url(../images/BACKg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-areas:
+        "i1 i2";
+    margin-bottom: 90px;
+}
+
+header img {
+    width: fit-content;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px;
+    grid-area: i1;
+}
+
+.main_links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 250px;
+    grid-area: i2;
+    margin: 60px 200px 0 0;
+}
+
+.main_links a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.main_links a:hover {
+    border-bottom: 3px solid rgb(199, 187, 170);
+    color: rgb(199, 187, 170);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.inputbox {
+    position: relative;
+    width: 196px;
+    margin-bottom: 30px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 9;
+}
+
+form button {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: 3px solid rgb(199, 187, 170);
+    border-radius: 20px;
+    color: aliceblue;
+    margin: 20px 0 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(199, 187, 170);
+
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: aliceblue;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input:valid~span,
+.inputbox input:focus~span {
+    color: rgb(199, 187, 170);
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0, 75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(199, 187, 170);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input:valid~i,
+.inputbox input:focus~i {
+    height: 44px;
+}
+
+section .way_to_train {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    display: none;
+}
+
+section .way_to_train img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+    transition: 1s;
+    margin-bottom: 50px;
+}
+
+section .way_to_train img:hover {
+    transform: translateY(25px);
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+}
+
+button {
+    position: relative;
+    width: 300px;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: 3px solid rgb(199, 187, 170);
+    border-radius: 20px;
+    color: aliceblue;
+    margin: 20px 0 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(199, 187, 170);
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 40px 0;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left .logo {
+    max-width: 150px;
+    border-radius: 20px;
+}
+
+.footer-description {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-middle {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.footer-middle div:hover {
+    h3 {
+        color: rgb(199, 187, 170);
+    }
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: rgb(199, 187, 170);
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right:hover {
+    color: rgb(199, 187, 170);
+}
+
+.social-icons i {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    margin: 5px;
+    color: aliceblue;
+}
+
+.social-icons i:hover {
+    transform: scale(1.3);
+    color: rgb(199, 187, 170);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    margin-top: 80px;
+}

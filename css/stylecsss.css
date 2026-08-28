@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+background-image: url(../images/3d-gym-equipment\ \(4\).jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+.wr{
+    width: 750px;
+    background: rgb(5, 5, 5);
+    padding: 40px 35px 55px;
+    opacity: 0.9;
+    box-shadow:  20px 20px 60px #00e5ff,
+    -20px -20px 60px #000000;
+  
+}
+.wr h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.wr .inputbox{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    background: rgb(0, 0, 0);
+}
+.inputbox .input-field{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    margin: 13px 0;
+}
+.inputbox .input-field input{
+    width: 100%;
+    height:100% ;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-size: 16px;
+    color: rgb(11, 9, 9);
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+.inputbox .input-field input::placeholder{
+    color: rgb(5, 5, 5);
+}
+.inputbox .input-field i{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 20px;
+}
+.wr label{
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px ;
+    color: white;
+}
+.wr label input{
+    accent-color: #fff;
+    margin-right: 5px;
+    color: white;
+}
+  .wr .bt{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   font-size: 16px;
+   color: rgb(17, 17, 17);
+   font-weight: 600;
+   cursor: pointer;
+}
